@@ -9,6 +9,12 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: cyjbpvtlulnxkw
     password: c975e5fa768166923b9b25b27bc54384883d4abcfc8bd6fd9ea72264882b036f
+
+  servlet:
+      multipart:
+        max-file-size: 10MB
+        max-request-size: 10MB
+
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
